@@ -259,7 +259,7 @@ html, body {
     font-size: xx-large;
     text-decoration: none;
     font-family: 'ZCOOL KuaiLe', cursive;
-    color: dimgray;
+    color: rgb(211, 205, 205);
 }
 
 .nav-item:hover {
@@ -267,6 +267,7 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    color: dimgray;
 }
 
 
