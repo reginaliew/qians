@@ -48,6 +48,7 @@ html, body {
     animation: drop-title 2s forwards;
     animation-delay: 3s;
     height: 50px;
+    z-index: 5;
 }
 
 @keyframes drop-title {
@@ -77,6 +78,7 @@ html, body {
         transform: rotate(20deg);
     }
     90% {
+        font-size: 70px;
         transform: rotate(-10deg);
     }
     95% {
