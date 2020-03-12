@@ -248,17 +248,25 @@ html, body {
 
 .nav-item {
     flex: 1;
+    width: 140px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px 40px 20px 40px;
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-size: xx-large;
     text-decoration: none;
     font-family: 'ZCOOL KuaiLe', cursive;
     color: dimgray;
+}
+
+.nav-item:hover {
+    background: url(../img/border.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
