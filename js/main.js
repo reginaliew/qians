@@ -43,9 +43,9 @@ class Home extends React.Component{
               id: 'chengqiu',
               name: '澄秋',
             //   image: 'github.com/reginaliew/qians/blob/master/img/chengqiu1.jpg',
-              image: '/../img/chengqiu1.jpg',
+              image: './img/chengqiu1.jpg',
             //   cover: '//github.com/reginaliew/qians/blob/master/img/chengqiu1.jpg',
-              cover: '/../img/chengqiu1.jpg',
+              cover: './img/chengqiu1.jpg',
               desc: '我的澄澄小宝贝，谢谢你带我进这个结义队。'
             },
           ],
@@ -78,8 +78,8 @@ class Home extends React.Component{
                 <div className="player" key={p.id}>
                     <div className={"player-front right"}></div>
                     <div className="player-back">
-                        {/* <img src={""+p.image+""} alt={p.name} className={"adjWidth " + (p.id==='zhuiyun'?"noAdjust ":"") + (p.id==='chengqiu'?"adjHigher  ":"") + (p.id==='chushang'?"adjHigher ":"")} /> */}
-                        <img src={"![alt-text](/assets/"+p.image+")"} alt={p.name} className={"adjWidth " + (p.id==='zhuiyun'?"noAdjust ":"") + (p.id==='chengqiu'?"adjHigher  ":"") + (p.id==='chushang'?"adjHigher ":"")} />
+                        <img src={p.image} alt={p.name} className={"adjWidth " + (p.id==='zhuiyun'?"noAdjust ":"") + (p.id==='chengqiu'?"adjHigher  ":"") + (p.id==='chushang'?"adjHigher ":"")} />
+                        {/* <img src={"![alt-text](/assets/"+p.image+")"} alt={p.name} className={"adjWidth " + (p.id==='zhuiyun'?"noAdjust ":"") + (p.id==='chengqiu'?"adjHigher  ":"") + (p.id==='chushang'?"adjHigher ":"")} /> */}
                         <span>{p.name}</span>
                     </div>
                 </div>
