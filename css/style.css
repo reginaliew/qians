@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Long+Cang|Ma+Shan+Zheng|ZCOOL+KuaiLe|ZCOOL+QingKe+HuangYou|ZCOOL+XiaoWei|Zhi+Mang+Xing&display=swap');
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+#root {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: calc(100vw - 18px);
+    display: flex;
+    flex-direction: column;
+    font-family: 'ZCOOL XiaoWei', serif;
+    overflow-x: hidden;
+    /* font-family: 'Ma Shan Zheng', cursive; */
+    /* font-family: 'ZCOOL KuaiLe', cursive; */
+    /* font-family: 'ZCOOL QingKe HuangYou', cursive; */
+    /* font-family: 'Long Cang', cursive; */
+    /* font-family: 'Zhi Mang Xing', cursive; */
+}
+
+.home-bg {
+    overflow-x: hidden;
+    background: rgb(252, 250, 250);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-title {
+    font-size: xxx-large;
+    padding-bottom: 30px;
+    position: relative;
+    opacity: 0;
+    animation: drop-title 2s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes drop-title {
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+    50% {
+        top: 10px;
+    }
+    65% {
+        opacity: 1;
+        top: 0px;
+    }
+    70% {
+        transform: rotate(-10deg);
+    }
+    72% {
+        transform: rotate(20deg);
+    }
+    80% {
+        transform: rotate(-10deg);
+    }
+    85% {
+        transform: rotate(20deg);
+    }
+    90% {
+        transform: rotate(-10deg);
+    }
+    98% {
+        transform: rotate(10deg);
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.players {
+    display: flex;
+    flex-direction: row;
+    width: 920px;
+}
+
+.player {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+    animation: player-in 1s forwards;
+}
+
+.player:not(:last-child) {
+    border-right: 3px solid rgb(252, 250, 250);
+}
+
+.player:nth-child(2){
+    animation-delay: 0.5s;
+}
+.player:nth-child(3){
+    animation-delay: 1s;
+}
+.player:nth-child(4){
+    animation-delay: 1.5s;
+}
+.player:nth-child(5){
+    animation-delay: 2s;
+}
+
+@keyframes player-in {
+    0% {
+        left: -500px;
+        opacity: 0;
+    }
+    80% {
+        /* left: 20px; */
+        opacity: 1;
+    }
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+.player:hover .player-front {
+    background-color: rgba(222, 221, 217, 0);
+}
+
+.player-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 221, 217, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.player-front.right {
+    align-items: flex-end;
+}
+
+.player-front.left {
+    align-items: flex-start;
+}
+
+.player-front span {
+    width: calc(100% - 10px);
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(222, 221, 217, 0.6);
+    text-align: right;
+    font-size: x-large;
+    font-weight: 900;
+    color: #2c2b28;
+}
+
+.player-back {
+    width: 100%;
+    height: 100%;
+}
+
+.player-back img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.player-back img.adjWidth {
+    object-fit: cover;
+}
+
+.player-back img.noAdjust {
+    object-fit: cover;
+    object-position: center center;
+}
+
+.player-back img.adjHigher {
+    object-fit: cover;
+    object-position: center center;
+}
+
+.move-to-nav {
+    margin-top: 25px;
+}
+
+.moveNav {
+    border: none;
+    background: none;
+    color: #cac7c7;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.moveNav:focus {
+    outline: none;
+}
+
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+.nav-bg {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: xx-large;
+    text-decoration: none;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: dimgray;
+}
+
+
+
+
+@media only screen and (max-width: 1080px) {
+    .home-title {
+        font-size: xx-large;
+        padding-bottom: 30px;
+    }
+
+    .players {
+        width: 760px;
+    }
+
+    .player-front span {
+        font-size: large;
+    }
+}
+
+
+
+@media only screen and (max-width: 860px) {
+    .home-title {
+        font-size: x-large;
+        padding-bottom: 25px;
+    }
+
+    .players {
+        width: 580px;
+    }
+
+    .player-front span {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .home-bg {
+        width: auto;
+        height: auto;
+        padding: 30px 0px;
+    }
+
+    .players {
+        flex-direction: column;
+        width: 320px;
+    }
+
+    .player {
+        height: 150px;
+    }
+
+    .player:not(:last-child) {
+        border-right: none;
+        border-bottom: 3px solid rgb(252, 250, 250);
+    }
+
+    .player-back img.noAdjust {
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .player-back img.adjHigher {
+        object-fit: cover;
+        object-position: center -100px;
+    }
+
+    .player-back img {
+        object-fit: contain;
+        object-position: center -50px;
+    }
+}
