@@ -11,33 +11,33 @@ class Home extends React.Component{
                 id: 'chushang',
                 name: '初商',
                 // image: '//github.com/reginaliew/qians/blob/master/img/chushang1.jpg',
-                image: '/../img/chushang1.jpg',
+                image: './img/chushang1.jpg',
                 //   cover: '//github.com/reginaliew/qians/blob/master/img/chushang.jpg',
-                cover: '/../img/chushang.jpg',
+                cover: './img/chushang.jpg',
               desc: '寸哥是我认识时间最短的老哥。'
             },{
               id: 'zhuiyun',
               name: '追云长慕',
             //   image: '//github.com/reginaliew/qians/blob/master/img/zhuiyun1.jpg',
-              image: '/../img/zhuiyun1.jpg',
+              image: './img/zhuiyun1.jpg',
             //   cover: '//github.com/reginaliew/qians/blob/master/img/zhuiyun2.jpg',
-              cover: '/../img/zhuiyun2.jpg',
+              cover: './img/zhuiyun2.jpg',
               desc: '很会下厨的潭宝宝'
             },{
               id: 'musui',
               name: '暮岁',
             //   image: '//github.com/reginaliew/qians/blob/master/img/musui1.jpg',
-              image: '/../img/musui1.jpg',
+              image: './img/musui1.jpg',
             //   cover: '//github.com/reginaliew/qians/blob/master/img/musui2.jpg',
-              cover: '/../img/musui2.jpg',
+              cover: './img/musui2.jpg',
               desc: '我家的千千小宝贝，不管改了多少次的名我还是只叫的惯这个名啊。'
             },{
               id: 'daoyue',
               name: '稻月',
             //   image: '//github.com/reginaliew/qians/blob/master/img/daoyue1.jpg',
-              image: '/../img/daoyue1.jpg',
+              image: './img/daoyue1.jpg',
             //   cover: '//github.com/reginaliew/qians/blob/master/img/daoyeu2.jpg',
-              cover: '/../img/daoyeu2.jpg',
+              cover: './img/daoyeu2.jpg',
               desc: '这是我。'
             },{
               id: 'chengqiu',
