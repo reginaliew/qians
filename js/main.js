@@ -88,7 +88,7 @@ class Home extends React.Component{
                             <a className="nav-item" href="#">人物传</a>
                             <a className="nav-item" href="#">时间线</a>
                             <a className="nav-item" href="#">回忆录</a>
-                            <a className="nav-item" href="#">沙雕小剧场</a>
+                            <a className="nav-item" href="drama.html">沙雕小剧场</a>
                     </div>
                 </div>
             </div>
