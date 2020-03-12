@@ -78,7 +78,7 @@ class Home extends React.Component{
                 <div className="player" key={p.id}>
                     <div className={"player-front right"}></div>
                     <div className="player-back">
-                        <img src={"![alt-text](assets/"+p.image+""} alt={p.name} className={"adjWidth " + (p.id==='zhuiyun'?"noAdjust ":"") + (p.id==='chengqiu'?"adjHigher  ":"") + (p.id==='chushang'?"adjHigher ":"")} />
+                        <img src={"![alt-text](/"+p.image+""} alt={p.name} className={"adjWidth " + (p.id==='zhuiyun'?"noAdjust ":"") + (p.id==='chengqiu'?"adjHigher  ":"") + (p.id==='chushang'?"adjHigher ":"")} />
                         <span>{p.name}</span>
                     </div>
                 </div>
