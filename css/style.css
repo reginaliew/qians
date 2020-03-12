@@ -263,7 +263,7 @@ html, body {
 }
 
 .nav-item:hover {
-    background: url(![alt-text]\(assets//../img/border.png);
+    background: url(//../img/border.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
