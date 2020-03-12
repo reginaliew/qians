@@ -10,32 +10,32 @@ class Home extends React.Component{
             {
               id: 'chushang',
               name: '初商',
-              image: '../img/chushang1.jpg',
-              cover: '../img/chushang.jpg',
+              image: 'https://github.com/reginaliew/qians/blob/master/img/chushang1.jpg',
+              cover: 'https://github.com/reginaliew/qians/blob/master/img/chushang.jpg',
               desc: '寸哥是我认识时间最短的老哥。'
             },{
               id: 'zhuiyun',
               name: '追云长慕',
-              image: '../img/zhuiyun1.jpg',
-              cover: '../img/zhuiyun2.jpg',
+              image: 'https://github.com/reginaliew/qians/blob/master/img/zhuiyun1.jpg',
+              cover: 'https://github.com/reginaliew/qians/blob/master/img/zhuiyun2.jpg',
               desc: '很会下厨的潭宝宝'
             },{
               id: 'musui',
               name: '暮岁',
-              image: '../img/musui1.jpg',
-              cover: '../img/musui2.jpg',
+              image: 'https://github.com/reginaliew/qians/blob/master/img/musui1.jpg',
+              cover: 'https://github.com/reginaliew/qians/blob/master/img/musui2.jpg',
               desc: '我家的千千小宝贝，不管改了多少次的名我还是只叫的惯这个名啊。'
             },{
               id: 'daoyue',
               name: '稻月',
-              image: '../img/daoyue1.jpg',
-              cover: '../img/daoyeu2.jpg',
+              image: 'https://github.com/reginaliew/qians/blob/master/img/daoyue1.jpg',
+              cover: 'https://github.com/reginaliew/qians/blob/master/img/daoyeu2.jpg',
               desc: '这是我。'
             },{
               id: 'chengqiu',
               name: '澄秋',
-              image: '../img/chengqiu1.jpg',
-              cover: '../img/chengqiu1.jpg',
+              image: 'https://github.com/reginaliew/qians/blob/master/img/chengqiu1.jpg',
+              cover: 'https://github.com/reginaliew/qians/blob/master/img/chengqiu1.jpg',
               desc: '我的澄澄小宝贝，谢谢你带我进这个结义队。'
             },
           ],
