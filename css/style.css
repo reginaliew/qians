@@ -244,6 +244,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 600px;
 }
 
 .nav-item {
@@ -263,7 +264,7 @@ html, body {
 }
 
 .nav-item:hover {
-    background: url(./../img/border.png);
+    background: url(./../img/border-vertical.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -303,6 +304,16 @@ html, body {
     .player-front span {
         font-size: large;
     }
+
+    .nav-bar {
+        width: 500px;
+    }
+
+    .nav-item {
+        width: 100px;
+        height: 180px;
+        font-size: x-large;
+    }
 }
 
 @media only screen and (max-width: 620px) {
@@ -339,5 +350,26 @@ html, body {
     .player-back img {
         object-fit: contain;
         object-position: center -50px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        width: 250px;
+        height: 400px;
+    }
+
+    .nav-item {
+        font-size: x-large;
+        height: 100px;
+        width: 200px;
+        writing-mode: horizontal-tb;
+        text-orientation: unset;
+    }
+
+    .nav-item:hover {
+        background: url(./../img/border-horizontal.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
